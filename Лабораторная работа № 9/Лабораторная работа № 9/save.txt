@@ -1,0 +1,4 @@
+Герой 99 20 10 1 50
+2
+Health Potion
+Health Potion

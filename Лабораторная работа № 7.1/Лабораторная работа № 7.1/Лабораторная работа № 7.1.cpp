@@ -1,4 +1,4 @@
-﻿#include <iostream>
+﻿﻿#include <iostream>
 #include <string>
 #include <vector>
 #include <fstream>
@@ -147,7 +147,7 @@ void saveToFile(const GameManager<Entity*>& manager, const std::string& filename
     if (!file) {
         throw std::runtime_error("Failed to open file for writing.");
     }
-    if (file.is_open()) 
+    if (file.is_open())
     {
         const auto& entities = manager.getEntities();
         file << entities.size() << "\n";
@@ -156,7 +156,7 @@ void saveToFile(const GameManager<Entity*>& manager, const std::string& filename
         }
     }
     // Запись данных в файл
-    
+
 }
 
 void loadFromFile(GameManager<Entity*>& manager, const std::string& filename) {
